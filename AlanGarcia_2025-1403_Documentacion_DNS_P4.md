@@ -1,32 +1,3 @@
-<style>
-/* Evitar orfandad de títulos al exportar a PDF */
-h1, h2, h3, h4, h5, h6 {
-  page-break-after: avoid !important;
-  break-after: avoid !important;
-}
-
-/* Evitar que los bloques de artículos se corten entre páginas */
-.article-block {
-  display: block !important;
-  page-break-inside: avoid !important;
-  break-inside: avoid !important;
-}
-
-/* Evitar que imágenes, tablas, código, párrafos, listas y citas se dividan */
-img, table, pre, p, li, tr, blockquote, figure, div[style*="text-align: center"] {
-  page-break-inside: avoid !important;
-  break-inside: avoid !important;
-}
-
-/* Asegurar que el body no interfiera con los saltos de página en la impresión */
-@media print {
-  body {
-    max-width: none !important;
-    margin: 0 !important;
-    padding: 0 !important;
-  }
-}
-</style>
 
 # INFORME TÉCNICO: DNS SPOOFING Y SUPLANTACIÓN DE SERVICIO WEB LOCAL
 ## Materia: Seguridad de Redes (TSI-203)
